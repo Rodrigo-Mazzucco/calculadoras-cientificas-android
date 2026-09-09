@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaMenu">
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/jetbrains_mono"
+        android:gravity="center"
+        android:text="Menu"
+        android:textColor="#212121"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSubtitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Escolha uma calculadora"
+        android:textColor="#757575"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewMenu" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSubtitulo">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:useDefaultMargins="false">
+
+            <Button
+                android:id="@+id/btnAppVelocidade"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#E53935"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Velocidade"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnAppFisica"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#FB8C00"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Força"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnEnergiaCinetica"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#FDD835"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Energia Cinética"
+                android:textAllCaps="false"
+                android:textColor="#5D4037"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnEquacaoTorricelli"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#43A047"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Equação de Torricelli"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnFahrenheitCelsius"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#1E88E5"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Fahrenheit → Celsius"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnCelsiusFahrenheit"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#3949AB"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Celsius → Fahrenheit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnAppVolumeParalelepipedo"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#8E24AA"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Volume do Paralelepípedo"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnFormulaDiluicao"
+                android:layout_width="0dp"
+                android:layout_height="88dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:backgroundTint="#D81B60"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Fórmula da Diluição"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+        </GridLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

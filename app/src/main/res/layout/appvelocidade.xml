@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppVelocidade">
+
+    <!-- Apenas a seta de voltar -->
+    <ImageButton
+        android:id="@+id/btnVoltar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Voltar"
+        android:src="@drawable/arrow_back"
+        app:tint="#FF2800"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloAppVelocidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/mclaren"
+        android:gravity="center"
+        android:text="Descobrir a Velocidade 🏎️"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtDistancia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Digite a distância percorrida (em km)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloAppVelocidade" />
+
+    <EditText
+        android:id="@+id/editTempo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Digite o tempo que levou (em horas)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtDistancia" />
+
+    <Button
+        android:id="@+id/btnVelocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:backgroundTint="#FF2800"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTempo" />
+
+    <TextView
+        android:id="@+id/textViewVelocidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/mclaren"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnVelocidade"
+        tools:text="Velocidade: 50 km/h" />
+
+    <ImageView
+        android:id="@+id/imgCarrinho"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/textViewVelocidade"
+        app:layout_constraintBottom_toBottomOf="@id/textViewVelocidade"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ferrari" />
+
+    <TextView
+        android:id="@+id/fumaca1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💨"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/imgCarrinho"
+        app:layout_constraintBottom_toBottomOf="@id/imgCarrinho"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fumaca2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💨"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/imgCarrinho"
+        app:layout_constraintBottom_toBottomOf="@id/imgCarrinho"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fumaca3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💨"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/imgCarrinho"
+        app:layout_constraintBottom_toBottomOf="@id/imgCarrinho"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

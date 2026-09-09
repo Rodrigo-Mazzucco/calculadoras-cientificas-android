@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/main"
+
+    android:background="#87CEEB"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    tools:context=".TelaSplash">
+
+
+
+    <TextView
+
+        android:id="@+id/textView3"
+
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="32dp"
+
+        android:layout_marginTop="64dp"
+
+        android:layout_marginEnd="32dp"
+
+        android:fontFamily="cursive"
+
+        android:gravity="center"
+
+        android:text="Meu primeiro app 🙏🏽"
+
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <!-- Usando porcentagem (55% da tela) e proporção 1:1 para manter o círculo perfeito em qualquer celular -->
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/imgFotoPerfil"
+
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+
+        android:layout_marginTop="48dp"
+
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/familia"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+
+        app:layout_constraintWidth_percent="0.65"
+
+        app:layout_constraintDimensionRatio="1:1"
+
+        app:shapeAppearanceOverlay="@style/CircleImageStyle"
+
+        app:strokeColor="#3949AB"
+
+        app:strokeWidth="3dp" />
+
+
+
+    <!-- Largura em 80% da tela com ajuste automático de altura (adjustViewBounds) -->
+
+    <ImageView
+
+        android:id="@+id/imageView"
+
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="32dp"
+
+        android:adjustViewBounds="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/imgFotoPerfil"
+
+        app:layout_constraintWidth_percent="0.80"
+
+        app:srcCompat="@drawable/representacao_assinatura" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
